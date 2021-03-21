@@ -1,13 +1,446 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet"> 
+    <title>Store</title>
 </head>
+
 <body>
-    <h1 class="test">Hello, World!</h1>
+    <div class="wrapper">
+        <div class="wrapper__content">
+
+            <header>
+                <div class="top">
+                    <div class="container">
+                        <div class="top__menu">
+                            <a class="top__menu__logo" href="index.html"><img src="img/logo.svg" alt="logo">
+                                <h3 class="top__menu__logo__text">bran</h3>
+                            </a>
+                            <!-- TODO
+                            сделать выпадающий список -->
+                            <button class="top__menu__button-dropdown">Browse<i
+                                    class="fa fa-caret-down fa-fw"></i></button>
+                            <form class="top__menu__form" action="#">
+                                <input class="top__menu__form__search" type="search" placeholder="Search for item...">
+                                <button class="top__menu__form__button-search"><i
+                                        class="fa fa-search fa-fw"></i></button>
+                            </form>
+                        </div>
+
+                        <div class="top__basket">
+                            <a href="#" class="top__basket__logo"><img src="img/icon-basket.svg" alt="basket"></a>
+                            <button class="top__basket__button-account-dropdown">My Account<i
+                                    class="fa fa-caret-down fa-fw"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <hr class="top__hr">
+                <nav class="container">
+                    <ul class="top-nav">
+                        <li><a href="#!"> home</a></li>
+                        <li><a href="#!">man</a></li>
+                        <li><a href="#!">women</a></li>
+                        <li><a href="#!">kids</a></li>
+                        <li><a href="#!">accoseriese</a></li>
+                        <li><a href="#!">featured</a></li>
+                        <li><a href="#!">hot deals</a></li>
+                    </ul>
+                </nav>
+
+                <div class="top-banner">
+                    <div class="top-banner__header container">
+                        <div class="top-banner__block"></div>
+                        <h3 class="top-banner__text">
+                            the brand<span class="top-banner__text__bottom">of luxerious</span>
+                        </h3>
+                    </div>
+                </div>
+            </header>
+
+            <main>
+                <!-- TODO
+                добиться адекватного выравнивания текста на категориях -->
+                <div class="category container">
+                    <div class="category__left">
+                        <a href="#1" class="category__left__img__top">
+                            <h4 class="category__left__img__top__text">Hot deal<br></h4>
+                            <img src="img/offers-men.png" alt="offers men">
+                        </a>
+
+                        <a href="#2" class="category__left__img__bottom">
+                            <h4 class="category__left__img__bottom__text">Luxirous & trendy<br>
+                            </h4>
+                            <img src="img/offers-accoseries.png" alt="offers accoseries">
+                        </a>
+                    </div>
+
+                    <div class="category__right">
+                        <a href="#3" class="category__right__img__top">
+                            <div class="category__right__img__top__text">30% offer<br></div>
+                            <img src="img/offers-women.png" alt="offers women">
+                        </a>
+
+                        <a href="#4" class="category__right__img__bottom">
+                            <div class="category__right__img__bottom__text">new arrivals<br></div>
+                            <img src="img/offers-kids.png" alt="offers kids">
+                        </a>
+                    </div>
+                </div>
+
+
+                <div class="offers container">
+                    <div class="offers__header">
+                        <h4 class="offers__header__head ">
+                            Fetured Items
+                        </h4>
+                        <p class="offers__header__text">Shop for items based on what we featured in this week</p>
+                    </div>
+                    <div class="offers-top">
+                    <div class="offers__card-box">
+
+                        <a href="#!" class="offers__card-box__card">
+                            <div class="offers__card-box__card__effect">
+                                <img class="offers__card-box__card__img" src="img/item-tshirt.jpg" alt="t-shirt men">
+                                <button class="offers__card-box__card__effect__button"><img src="img/basket-cart.svg" alt="basket"> Add to Cart</button>
+                            </div>
+                            <p class="offers__card-box__card__description">Mango People T-shirt</p>
+                            <div class="offers__card-box__card__price-rating">
+                                <p class="offers__card-box__card__price">$52.00</p>
+                                <div class="offers__card-box__card__rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="#!" class="offers__card-box__card">
+                            <div class="offers__card-box__card__effect">
+                                <img class="offers__card-box__card__img" src="img/item-tshirt-women.jpg" alt="t-shirt women">
+                                <button class="offers__card-box__card__effect__button"><img src="img/basket-cart.svg" alt="basket"> Add to Cart</button>
+                            </div>
+                            <p class="offers__card-box__card__description">Mango People T-shirt</p>
+                            <div class="offers__card-box__card__price-rating">
+                                <p class="offers__card-box__card__price">$52.00</p>
+                                <div class="offers__card-box__card__rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="#!" class="offers__card-box__card">
+                            <div class="offers__card-box__card__effect">
+                                <img class="offers__card-box__card__img" src="img/item-jacket.jpg" alt="jacket">
+                                <button class="offers__card-box__card__effect__button"><img src="img/basket-cart.svg" alt="basket"> Add to Cart</button>
+                            </div>
+                            <p class="offers__card-box__card__description">Mango People T-shirt</p>
+                            <div class="offers__card-box__card__price-rating">
+                                <p class="offers__card-box__card__price">$52.00</p>
+                                <div class="offers__card-box__card__rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="#!" class="offers__card-box__card">
+                            <div class="offers__card-box__card__effect">
+                                <img class="offers__card-box__card__img" src="img/item-dress.jpg" alt="dress">
+                                <button class="offers__card-box__card__effect__button"><img src="img/basket-cart.svg" alt="basket"> Add to Cart</button>
+                            </div>
+                            <p class="offers__card-box__card__description">Mango People T-shirt</p>
+                            <div class="offers__card-box__card__price-rating">
+                                <p class="offers__card-box__card__price">$52.00</p>
+                                <div class="offers__card-box__card__rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                        
+                <div class="offers-bottom">
+                    <div class="offers__card-box">
+                        <a href="#!" class="offers__card-box__card">
+                            <div class="offers__card-box__card__effect">
+                                <img class="offers__card-box__card__img" src="img/item-dress2.jpg" alt="dress">
+                                <button class="offers__card-box__card__effect__button"><img src="img/basket-cart.svg" alt="basket"> Add to Cart</button>
+                            </div>
+                            <p class="offers__card-box__card__description">Mango People T-shirt</p>
+                            <div class="offers__card-box__card__price-rating">
+                                <p class="offers__card-box__card__price">$52.00</p>
+                                <div class="offers__card-box__card__rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="#!" class="offers__card-box__card">
+                            <div class="offers__card-box__card__effect">
+                                <img class="offers__card-box__card__img" src="img/item-jacket2.jpg" alt="jacket">
+                                <button class="offers__card-box__card__effect__button"><img src="img/basket-cart.svg" alt="basket"> Add to Cart</button>
+                            </div>
+                            <p class="offers__card-box__card__description">Mango People T-shirt</p>
+                            <div class="offers__card-box__card__price-rating">
+                                <p class="offers__card-box__card__price">$52.00</p>
+                                <div class="offers__card-box__card__rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="#!" class="offers__card-box__card">
+                            <div class="offers__card-box__card__effect">
+                                <img class="offers__card-box__card__img" src="img/item-trousers.jpg" alt="trousers">
+                                <button class="offers__card-box__card__effect__button"><img src="img/basket-cart.svg" alt="basket"> Add to Cart</button>
+                            </div>
+                            <p class="offers__card-box__card__description">Mango People T-shirt</p>
+                            <div class="offers__card-box__card__price-rating">
+                                <p class="offers__card-box__card__price">$52.00</p>
+                                <div class="offers__card-box__card__rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                        </a>
+                        
+                        <a href="#!" class="offers__card-box__card">
+                            <div class="offers__card-box__card__effect">
+                                <img class="offers__card-box__card__img" src="img/item-hoodie.jpg" alt="hoodie">
+                                <button class="offers__card-box__card__effect__button"><img src="img/basket-cart.svg" alt="basket"> Add to Cart</button>
+                            </div>
+                            <p class="offers__card-box__card__description">Mango People T-shirt</p>
+                            <div class="offers__card-box__card__price-rating">
+                                <p class="offers__card-box__card__price">$52.00</p>
+                                <div class="offers__card-box__card__rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                    <button class="offers__browse-product">Browse All Product <i class="fa fa-long-arrow-right fa-fw"></i></button>
+
+                <div class="banner-bottom container">
+                    <a href="#!">
+                    <div class="banner-bottom__bg-img">
+                        <h3 class="banner-bottom__bg-img__header">
+                            30% <span class="banner-bottom__bg-img__header__color">offer</span> <br> <span class="banner-bottom__bg-img__header__font-size">for women</span>
+                        </h3>
+                    </div>
+                    </a>
+
+                    <div class="banner-bottom__advantage">
+
+                        <div class="banner-bottom__advantage__card">
+                                <img src="img/icon-delivery.svg" alt="delivery">
+
+                            <div class="banner-bottom__advantage__block">
+                                <h4 class="banner-bottom__advantage__header">
+                                Free delivery
+                                </h4>
+                                <p class="banner-bottom__advantage__text">
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad reiciendis dolor nisi cumque? Possimus, repellat?
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="banner-bottom__advantage__card">
+                                <img src="img/icon-sales.svg" alt="sales">
+
+                            <div class="banner-bottom__advantage__block">
+                                <h4 class="banner-bottom__advantage__header">
+                                Sales & discounts
+                                </h4>
+                                <p class="banner-bottom__advantage__text">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe expedita placeat tempore deleniti officia. Aut!
+                                </p>
+                            </div>
+                        </div>
+
+                    <div class="banner-bottom__advantage__card">
+                            <img src="img/icon-quality.svg" alt="quality">
+
+                        <div class="banner-bottom__advantage__block">
+                            <h4 class="banner-bottom__advantage__header">
+                            Quality assurance
+                            </h4>
+                            <p class="banner-bottom__advantage__text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut reprehenderit dolores libero iste assumenda porro?                                
+                            </p>
+                        </div>
+                    </div>
+
+                    </div>
+
+
+                </div>
+
+
+            </main>
+
+        </div>
+
+        <footer>
+
+            <div class="footer-top">
+                <div class="container">
+                    <div class="footer-top__left">
+                        <div class="footer-top__carousel">
+                            <img src="img/footer-carousel-photo.png" alt="photo">
+                            <div class="footer-top__carousel__content">
+                                <p class="footer-top__carousel__content__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem facere eum nesciunt modi vel inventore itaque nihil error dolorum dignissimos?</p>
+                                <p class="footer-top__carousel__content__name">Bin Burhan<br><span class="footer-top__carousel__content__name__add">Dhaka, Bd</span></p>
+                                <div class="footer-top__carousel__content__switch">
+                                    <button class="footer-top__carousel__switcher"></button>
+                                    <button class="footer-top__carousel__switcher"></button>
+                                    <button class="footer-top__carousel__switcher"></button>
+                                </div>
+                            </div>
+                        
+
+                        </div>
+
+
+                    </div>
+                    
+                    <div class="footer-top__right">
+                        <h4>Subscribe</h4>
+                        <p>for our newletter and promotion</p>
+                        <form action="#!" class="footer-top__subscribe-form">
+                            <input class type="search" placeholder="Enter Your Email">
+                            <button>Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="footer-mid container">
+
+                <div class="footer-mid__info">
+                    <a href="#!" class="footer-mid__info__logo">
+                        <img src="img/logo.svg" alt="logo">
+                        <h3 class="footer-mid__info__logo__text">bran</h3>
+                    </a>
+                    
+                    <p class="footer-mid__info__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias obcaecati architecto exercitationem in modi vitae. Aliquam facilis maiores recusandae ex nesciunt eos doloremque vero quas molestiae quisquam culpa, voluptatum exercitationem, illum unde accusamus eligendi doloribus dolores temporibus neque quia officiis.
+                        <br><br>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab reprehenderit nobis quos totam nulla praesentium, enim modi labore ducimus officiis.
+                    </p>
+                </div>
+                
+                <nav>
+                    <h4 class="footer-mid__nav-header">Company</h4>
+                    <ul class="footer-mid__nav-list">
+                        <li><a href="#!">Home</a></li>
+                        <li><a href="#!">Shop</a></li>
+                        <li><a href="#!">About</a></li>
+                        <li><a href="#!">How It Works</a></li>
+                        <li><a href="#!">Contact</a></li>
+                        
+                    </ul>
+                </nav>
+                  
+                <nav>
+                    <h4 class="footer-mid__nav-header">Information</h4>
+                    <ul class="footer-mid__nav-list">
+                        <li><a href="#!">Tearms & Condition</a></li>
+                        <li><a href="#!">Privacy Policy</a></li>
+                        <li><a href="#!">How to Buy</a></li>
+                        <li><a href="#!">How to Sell</a></li>
+                        <li><a href="#!">Promotion</a></li>
+                    </ul>
+                </nav>
+                  
+                <nav>
+                    <h4 class="footer-mid__nav-header">Shop category</h4>
+                    <ul class="footer-mid__nav-list">
+                        <li><a href="#!">Men</a></li>
+                        <li><a href="#!">Women</a></li>
+                        <li><a href="#!">Child</a></li>
+                        <li><a href="#!">Apparel</a></li>
+                        <li><a href="#!">Brows All</a></li>
+                    </ul>
+                </nav>
+
+               
+
+            </div>
+
+            <div class="footer-bottom">
+                <div class="container">
+                    <div class="footer-bottom__rights">
+                        &copy; 2017  Brand  All Rights Reserved.
+                    </div>
+
+                    <div class="footer-bottom__social">
+                        <a href="#!" class="footer-bottom__social__button">
+                            <i class="fa fa-facebook fa-fw"></i>
+                        </a>
+
+                        <a href="#!" class="footer-bottom__social__button">
+                            <i class="fa fa-twitter fa-fw"></i>
+                        </a>
+
+                        <a href="#!" class="footer-bottom__social__button">
+                            <i class="fa fa-linkedin fa-fw"></i>
+                        </a>
+
+                        <a href="#!" class="footer-bottom__social__button">
+                            <i class="fa fa-pinterest fa-fw"></i>
+                        </a>
+
+                        <a href="#!" class="footer-bottom__social__button">
+                            <i class="fa fa-google-plus fa-fw"></i>
+                        </a>
+                        
+
+                    </div>
+
+
+
+                </div>
+            </div>
+            
+        </footer>
+    </div>
 </body>
+
 </html>
