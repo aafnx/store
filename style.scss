@@ -1106,6 +1106,10 @@ body {
 
 }
 
+.footer-margin-single-page {
+    margin-top: 75px;
+}
+
 .footer-mid {
     height: 458px;
     display: flex;
@@ -1252,4 +1256,189 @@ body {
             color: $pink;
         }
     }
+}
+
+.product {
+
+    & .container {
+        position: relative;
+    }
+
+    &__card {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: 1px solid #eaeaea;
+        background-color: #f7f7f7;
+
+
+        &__arrow {
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 47px;
+            height: 47px;
+            color: #fff;
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 24px;
+            background-color: #cdcdcc; // поставил такой цвет, цвет из стилей макета гораздо темнее, чем выглядит визуально
+        }
+    }
+
+    &__info {
+        position: absolute;
+        z-index: 1;
+        top: -60px;
+        border: 1px solid #eaeaea;
+        background-color: #fff;
+        padding: 73px 260px 122px;
+
+        &:hover &__rating {
+            opacity: 1;
+        }
+
+        &__description {
+            padding-bottom: 43px;
+            border-bottom: 1px solid #eaeaea;
+        }
+
+        &__name {
+            color: $pink;
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 24px;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+
+        &__header {
+            margin-top: 17px;
+            color: #4d4d4d;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 24px;
+            text-align: center;
+            text-transform: uppercase;
+
+        }
+
+        &__rating {
+            opacity: 0;
+            margin: 24px auto 0;
+            color: #f1b746;
+            font-size: 19px;
+            font-weight: 400;
+            text-align: center;
+            cursor: pointer;
+
+            & .fa:hover {
+                color: #898989;
+            }
+        }
+
+        &__text {
+            color: #5e5e5e;
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 24px;
+            text-align: center;
+            margin-top: 26px;
+        }
+
+        &__spec {
+            display: flex;
+            justify-content: center;
+            margin-top: 28px;
+
+            &__text {
+                color: #b9b9b9;
+                font-size: 14px;
+                font-weight: 700;
+                line-height: 24px;
+                text-align: center;
+                text-transform: uppercase;
+
+                &:not(:last-of-type) {
+                    margin-right: 44px;
+                }
+
+                &__color {
+                    color: #2f2f2f;
+                }
+            }
+
+        }
+
+        &__price {
+            color: $pink;
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 24px;
+            text-align: center;
+            margin-top: 37px;
+        }
+    }
+}
+
+.select-option {
+
+    margin-top: 60px;
+
+    &__flex {
+        display: flex;
+        justify-content: space-evenly
+    }
+}
+
+.option {
+
+    &__header {
+        text-transform: uppercase;
+    }
+
+    &__submit {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid $pink;
+        background-color: #fff;
+        padding: 16px 0;
+        margin-top: 28px;
+        width: 100%;
+        outline: none;
+        cursor: pointer;
+        color: $pink;
+        font-size: 16px;
+
+        &:hover {
+            color: #fff;
+            background-color: $pink;
+        }
+
+        & .fas {
+            margin-right: 10px;
+
+        }
+
+
+    }
+}
+
+.option__color {
+    width: 12px;
+    height: 12px;
+    background-color: #ef5b70;
+}
+
+.offers-header-single-page {
+    margin-top: 850px;
+    color: #4d4d4d;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: center;
+    text-transform: uppercase;
 }
