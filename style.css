@@ -1705,4 +1705,103 @@ body {
   text-align: center;
   text-transform: uppercase;
 }
+
+.flex-box-product {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 60px;
+}
+
+aside {
+  margin-right: 40px;
+}
+
+.side-nav-box {
+  width: 243px;
+}
+
+.side-nav-box:not(:first-of-type) {
+  margin-top: 18px;
+}
+
+.side-nav-box[open] .side-nav-box__summary {
+  color: #f16d7f;
+}
+
+.side-nav-box[open] .side-nav-box-header {
+  color: #f16d7f;
+}
+
+.side-nav-box[open] .side-nav-box__summary::after {
+  content: "\f0d8";
+  color: #f16d7f;
+}
+
+.side-nav-box ul {
+  list-style-type: none;
+  margin-top: 10px;
+  margin-left: 22px;
+}
+
+.side-nav-box__summary {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid #ebebeb;
+  outline: none;
+  cursor: pointer;
+}
+
+.side-nav-box__summary::after {
+  content: "\f0d7";
+  font-family: "Font Awesome 5 Free";
+  color: #6f6e6e;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.side-nav-box-header {
+  color: #6f6e6e;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+  text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.side-nav-box-header::before {
+  content: "";
+  width: 5px;
+  height: 37px;
+  background-color: #f16d7f;
+  border-bottom: 1px solid #f16d7f;
+  margin-right: 11px;
+}
+
+.side-nav-box__link {
+  display: block;
+  text-decoration: none;
+  color: #6f6e6e;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 33px;
+}
+
+.side-nav-box__link:hover {
+  color: #f16d7f;
+}
 /*# sourceMappingURL=style.css.map */
