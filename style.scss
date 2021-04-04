@@ -2013,3 +2013,18 @@ body {
     height: 3px;
     color: $pink;
 }
+
+.woman {
+    @extend .man;
+
+    &::before {
+        @extend .man:before;
+        right: -12px;
+    }
+}
+
+.cart-table {
+    width: 1142px;
+    height: 623px;
+    border: 1px solid #000;
+}

@@ -2190,11 +2190,11 @@ body {
   margin: 0;
 }
 
-.man {
+.man, .woman {
   position: relative;
 }
 
-.man:before {
+.man:before, .woman:before, .woman::before {
   position: absolute;
   top: 60px;
   right: -20px;
@@ -2203,5 +2203,15 @@ body {
   width: 75px;
   height: 3px;
   color: #f16d7f;
+}
+
+.woman::before {
+  right: -12px;
+}
+
+.cart-table {
+  width: 1142px;
+  height: 623px;
+  border: 1px solid #000;
 }
 /*# sourceMappingURL=style.css.map */
