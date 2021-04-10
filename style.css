@@ -936,11 +936,6 @@ body {
   font-size: 14px;
   font-weight: 400;
   letter-spacing: 0.35px;
-  transition: all 0.5s;
-}
-.footer-top__subscribe-form button:hover {
-  background-color: #fff;
-  color: #f16d7f;
 }
 
 .footer-margin-single-page {
