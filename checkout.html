@@ -9,7 +9,7 @@
     <script src="https://kit.fontawesome.com/95a651c91a.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet"> 
-    <title>shopping cart</title>
+    <title>Checkout</title>
     <link rel="stylesheet" href="style.scss">
 </head>
 
@@ -445,6 +445,7 @@
                         </li>
                     </ul>
                 </nav>
+                <div class="mega-menu"></div>
 
                 <div class="banner-single-page">
                     <div class="container">
@@ -460,152 +461,300 @@
             </header>
 
             <main>
-                <div class="container">
+                <div class="container checkout-info-margin">
+                    <details class="checkout-info">
+                        <summary class="checkout-info-header">
+                            01. Shipping adress
+                        </summary>
 
-            <div class="cart-table">
-                        <div class="table-top">
-                            <p class="table-header table-top__table-header">Product Details</p>
-                            <p class="table-header">Unit Price</p>
-                            <p class="table-header">Quantity</p>
-                            <p class="table-header">Shipping</p>
-                            <p class="table-header">Subtotal</p>
-                            <p class="table-header">Action</p>
-                        </div>
-                        <form action="#!">
-                        <div class="table-product">
-                            <div class="table-product-card">
-                                <div class="table-product-card-info">
-                                    <a href="single-page.html"><img src="img/shopping cart/cart-product-1.jpg" alt="product"></a>
-                                    <div class="table-product-card-info__description">
-                                        <a href="single-page.html" class="table-header table-product-card-info__description__table-header">
-                                            Mango People T-Shirt
-                                        </a>
-                                        <div class="product__info__rating">
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                        </div>
-                                        <p class="table-product-card-text">Color: <span>Red</span></p>
-                                        <p class="table-product-card-text">Size: <span>XII</span></p>
-                                    </div>
-                                </div>
-                                <p class="table-text">$150</p>
-                                <input class="table-quantity table-text" type="number" name="quantity" min="1" max="10" placeholder="1">
-                                <p class="table-text">FREE</p>
-                                <p class="table-text">$300</p>
-                                <i class="fas fa-times-circle color-icon table-product-card__fas"></i>
-                            </div>
-                            <div class="table-product-card">
-                                <div class="table-product-card-info">
-                                    <a href="single-page.html"><img src="img/shopping cart/cart-product-2.jpg" alt="product"></a>
-                                    <div class="table-product-card-info__description">
-                                        <a href="single-page.html" class="table-header table-product-card-info__description__table-header">
-                                            Mango People T-Shirt
-                                        </a>
-                                        <div class="product__info__rating">
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                        </div>
-                                        <p class="table-product-card-text">Color: <span>Red</span></p>
-                                        <p class="table-product-card-text">Size: <span>XII</span></p>
-                                    </div>
-                                </div>
-                                <p class="table-text">$150</p>
-                                <input class="table-quantity table-text" type="number" name="quantity" min="1" max="10" placeholder="1">
-                                <p class="table-text">Shipping</p>
-                                <p class="table-text">$300</p>
-                                <i class="fas fa-times-circle color-icon table-product-card__fas"></i>
-                            </div>
-                            <div class="table-product-card">
-                                <div class="table-product-card-info">
-                                    <a href="single-page.html"><img src="img/shopping cart/cart-product-3.jpg" alt="product"></a>
-                                    <div class="table-product-card-info__description">
-                                        <a href="single-page.html" class="table-header table-product-card-info__description__table-header">
-                                            Mango People T-Shirt
-                                        </a>
-                                        <div class="product__info__rating">
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                        </div>
-                                        <p class="table-product-card-text">Color: <span>Red</span></p>
-                                        <p class="table-product-card-text">Size: <span>XII</span></p>
-                                    </div>
-                                </div>
-                                <p class="table-text">$150</p>
-                                <input class="table-quantity table-text" type="number" name="quantity" min="1" max="10" placeholder="1">
-                                <p class="table-text">Shipping</p>
-                                <p class="table-text">$300</p>
-                                <i class="fas fa-times-circle color-icon table-product-card__fas"></i>
-                            </div>
-                        </div>
+                        <div class="checkout-info-card">
+                            <form>
+                                <p class="checkout-info-card-header">Check as guest or register</p>
+                                <p class="checkout-info-card-additional-text">Register with us for future convenience</p>
 
-                        <div class="flex-box-button">
-                            <input class="table-button" type="reset" value="Clear Shopping Cart">
-                            <a href="product.html" class="table-button">Continue Shopping</a>
-                        </div>
-                        </form>
+                                <p class="checkout-info-card-text checkout-radio-margin-top"><input class="checkout-radio" type="radio" name="checkout-type" required>Checkout as guest</p>
 
+                                
+                                <p class="checkout-info-card-text checkout-radio-margin-bottom"><input class="checkout-radio" type="radio" name="checkout-type" required>Register</p>
 
-                        <div class="table-data">
-                            <form class="data-shipping">
-                                <p class="table-data-header">
-                                    Shipping address
-                                </p>
+                                <p class="checkout-info-card-header">Register and save time!</p>
+                                <p class="checkout-info-card-additional-text">Register with us for future convenience</p>
 
-                                <input class="input-data" type="search" list="country" placeholder="Bangladesh" pattern="^[a-zA-Z\s]+$" required>
-                                <datalist id="country">
-                                    <option value="Bangladesh"></option>
-                                    <option value="Russia"></option>
-                                    <option value="USA"></option>
-                                    <option value="France"></option>
-                                    <option value="Germany"></option>
-                                    <option value="Ukraine"></option>
-                                    <option value="Belarus"></option>
-                                </datalist>
+                                <p class="checkout-info-card-additional-text checkout-add-text-position checkout-add-text-fa">Fast and easy checkout</p>
 
-                                <input class="input-data" type="search" list="state" placeholder="State" pattern="^[a-zA-Z\s]+$" required>
-                                <datalist id="state">
-                                    <option value="State one"></option>
-                                    <option value="State two"></option>
-                                    <option value="State three"></option>
-                                    <option value="State four"></option>
-                                    <option value="State five"></option>
-                                    <option value="State six"></option>
-                                    <option value="State seven"></option>
-                                </datalist>
+                                <p class="checkout-info-card-additional-text checkout-add-text-fa">Easy access to your order history and status</p>
 
-                                <input class="input-data input-data__number" type="number" name="postcode" placeholder="Postcode / ZIP" pattern="[0-9]{6}" required>
-
-                                <button class="data-button">Get a quote</button>
+                                <button class="checkout-info-card-button">Continue</button>
                             </form>
 
-                            <form class="data-coupon">
-                                <p class="table-data-header">
-                                    Coupon discount
-                                </p>
-                                <p class="data-text">Enter your coupon code if you have one</p>
-                                <input class="input-data input-data__number" type="number" name="postcode" placeholder="Coupon" required>
-                                <button class="data-button">Apply coupon</button>
+
+                            <form>
+                                <p class="checkout-info-card-header">Already registed?</p>
+                                <p class="checkout-info-card-additional-text">Please log in below</p>
+
+                                <p class="checkout-info-card-text checkout-login-text-margin checkout-login-data">Email address</p>
+                                <input class="checkout-input" type="email" placeholder="Enter your email" required>
+                                <p class="checkout-info-card-text checkout-login-data">Password</p>
+                                <input class="checkout-input" type="password" placeholder="Password" required>
+                                <p class="required-text">Required Fields</p>
+
+                                <div class="checkout-flex-login-button">
+                                    <button class="checkout-info-card-button">Log in</button>
+                                    <a class="checkout-login-link" href="#!">Forgot password?</a>
+
+                                </div>
+                            </form>
+                        </div>
+
+
+
+                    </details>
+
+                    <details class="checkout-info">
+                        <summary class="checkout-info-header">
+                            02. Billing Information
+                        </summary>
+
+                        <div class="checkout-info-card">
+                            <form>
+
+                                <p class="checkout-info-card-header">Check as guest or register</p>
+                                <p class="checkout-info-card-additional-text">Register with us for future convenience</p>
+
+                                <p class="checkout-info-card-text checkout-radio-margin-top"><input class="checkout-radio" type="radio" name="checkout-type" required>Checkout as guest</p>
+
+                                
+                                <p class="checkout-info-card-text checkout-radio-margin-bottom"><input class="checkout-radio" type="radio" name="checkout-type" required>Register</p>
+
+                                <p class="checkout-info-card-header">Register and save time!</p>
+                                <p class="checkout-info-card-additional-text">Register with us for future convenience</p>
+
+                                <p class="checkout-info-card-additional-text checkout-add-text-position checkout-add-text-fa">Fast and easy checkout</p>
+
+                                <p class="checkout-info-card-additional-text checkout-add-text-fa">Easy access to your order history and status</p>
+
+                                <button class="checkout-info-card-button">Continue</button>
                             </form>
 
-                            <div class="data-total">
-                                <p class="total-text">Sub total</p>
-                                <p class="table-data-header data-total__table-data-header">
-                                    Grand total
-                                </p>
-                                <a href="checkout.html" class="total-button">Proceed to checkout</a>
 
-                            </div>
+                            <form>
+                                <p class="checkout-info-card-header">Already registed?</p>
+                                <p class="checkout-info-card-additional-text">Please log in below</p>
+
+                                <p class="checkout-info-card-text checkout-login-text-margin checkout-login-data">Email address</p>
+                                <input class="checkout-input" type="email" placeholder="Enter your email" required>
+                                <p class="checkout-info-card-text checkout-login-data">Password</p>
+                                <input class="checkout-input" type="password" placeholder="Password" required>
+                                <p class="required-text">Required Fields</p>
+
+                                <div class="checkout-flex-login-button">
+                                    <button class="checkout-info-card-button">Log in</button>
+                                    <a class="checkout-login-link" href="#!">Forgot password?</a>
+
+                                </div>
+                            </form>
                         </div>
-                    </div>
+
+
+
+                    </details>
+
+                    <details class="checkout-info">
+                        <summary class="checkout-info-header">
+                            03. Shipping Information
+                        </summary>
+
+                        <div class="checkout-info-card">
+                            <form>
+
+                                <p class="checkout-info-card-header">Check as guest or register</p>
+                                <p class="checkout-info-card-additional-text">Register with us for future convenience</p>
+
+                                <p class="checkout-info-card-text checkout-radio-margin-top"><input class="checkout-radio" type="radio" name="checkout-type" required>Checkout as guest</p>
+
+                                
+                                <p class="checkout-info-card-text checkout-radio-margin-bottom"><input class="checkout-radio" type="radio" name="checkout-type" required>Register</p>
+
+                                <p class="checkout-info-card-header">Register and save time!</p>
+                                <p class="checkout-info-card-additional-text">Register with us for future convenience</p>
+
+                                <p class="checkout-info-card-additional-text checkout-add-text-position checkout-add-text-fa">Fast and easy checkout</p>
+
+                                <p class="checkout-info-card-additional-text checkout-add-text-fa">Easy access to your order history and status</p>
+
+                                <button class="checkout-info-card-button">Continue</button>
+                            </form>
+
+
+                            <form>
+                                <p class="checkout-info-card-header">Already registed?</p>
+                                <p class="checkout-info-card-additional-text">Please log in below</p>
+
+                                <p class="checkout-info-card-text checkout-login-text-margin checkout-login-data">Email address</p>
+                                <input class="checkout-input" type="email" placeholder="Enter your email" required>
+                                <p class="checkout-info-card-text checkout-login-data">Password</p>
+                                <input class="checkout-input" type="password" placeholder="Password" required>
+                                <p class="required-text">Required Fields</p>
+
+                                <div class="checkout-flex-login-button">
+                                    <button class="checkout-info-card-button">Log in</button>
+                                    <a class="checkout-login-link" href="#!">Forgot password?</a>
+                                </div>
+                            </form>
+                        </div>
+
+
+
+                    </details>
+
+                    <details class="checkout-info">
+                        <summary class="checkout-info-header">
+                            04. Shipping Method
+                        </summary>
+
+                        <div class="checkout-info-card">
+                            <form>
+
+                                <p class="checkout-info-card-header">Check as guest or register</p>
+                                <p class="checkout-info-card-additional-text">Register with us for future convenience</p>
+
+                                <p class="checkout-info-card-text checkout-radio-margin-top"><input class="checkout-radio" type="radio" name="checkout-type" required>Checkout as guest</p>
+
+                                
+                                <p class="checkout-info-card-text checkout-radio-margin-bottom"><input class="checkout-radio" type="radio" name="checkout-type" required>Register</p>
+
+                                <p class="checkout-info-card-header">Register and save time!</p>
+                                <p class="checkout-info-card-additional-text">Register with us for future convenience</p>
+
+                                <p class="checkout-info-card-additional-text checkout-add-text-position checkout-add-text-fa">Fast and easy checkout</p>
+
+                                <p class="checkout-info-card-additional-text checkout-add-text-fa">Easy access to your order history and status</p>
+
+                                <button class="checkout-info-card-button">Continue</button>
+                            </form>
+
+
+                            <form>
+                                <p class="checkout-info-card-header">Already registed?</p>
+                                <p class="checkout-info-card-additional-text">Please log in below</p>
+
+                                <p class="checkout-info-card-text checkout-login-text-margin checkout-login-data">Email address</p>
+                                <input class="checkout-input" type="email" placeholder="Enter your email" required>
+                                <p class="checkout-info-card-text checkout-login-data">Password</p>
+                                <input class="checkout-input" type="password" placeholder="Password" required>
+                                <p class="required-text">Required Fields</p>
+
+                                <div class="checkout-flex-login-button">
+                                    <button class="checkout-info-card-button">Log in</button>
+                                    <a class="checkout-login-link" href="#!">Forgot password?</a>
+                                </div>
+                            </form>
+                        </div>
+
+
+
+                    </details>
+
+                    <details class="checkout-info">
+                        <summary class="checkout-info-header">
+                            05. Payment Method
+                        </summary>
+
+                        <div class="checkout-info-card">
+                            <form>
+
+                                <p class="checkout-info-card-header">Check as guest or register</p>
+                                <p class="checkout-info-card-additional-text">Register with us for future convenience</p>
+
+                                <p class="checkout-info-card-text checkout-radio-margin-top"><input class="checkout-radio" type="radio" name="checkout-type" required>Checkout as guest</p>
+
+                                
+                                <p class="checkout-info-card-text checkout-radio-margin-bottom"><input class="checkout-radio" type="radio" name="checkout-type" required>Register</p>
+
+                                <p class="checkout-info-card-header">Register and save time!</p>
+                                <p class="checkout-info-card-additional-text">Register with us for future convenience</p>
+
+                                <p class="checkout-info-card-additional-text checkout-add-text-position checkout-add-text-fa">Fast and easy checkout</p>
+
+                                <p class="checkout-info-card-additional-text checkout-add-text-fa">Easy access to your order history and status</p>
+
+                                <button class="checkout-info-card-button">Continue</button>
+                            </form>
+
+
+                            <form>
+                                <p class="checkout-info-card-header">Already registed?</p>
+                                <p class="checkout-info-card-additional-text">Please log in below</p>
+
+                                <p class="checkout-info-card-text checkout-login-text-margin checkout-login-data">Email address</p>
+                                <input class="checkout-input" type="email" placeholder="Enter your email" required>
+                                <p class="checkout-info-card-text checkout-login-data">Password</p>
+                                <input class="checkout-input" type="password" placeholder="Password" required>
+                                <p class="required-text">Required Fields</p>
+
+                                <div class="checkout-flex-login-button">
+                                    <button class="checkout-info-card-button">Log in</button>
+                                    <a class="checkout-login-link" href="#!">Forgot password?</a>
+                                </div>
+                            </form>
+                        </div>
+
+
+
+                    </details>
+
+                    <details class="checkout-info">
+                        <summary class="checkout-info-header">
+                            06. Order review
+                        </summary>
+
+                        <div class="checkout-info-card">
+                            <form>
+
+                                <p class="checkout-info-card-header">Check as guest or register</p>
+                                <p class="checkout-info-card-additional-text">Register with us for future convenience</p>
+
+                                <p class="checkout-info-card-text checkout-radio-margin-top"><input class="checkout-radio" type="radio" name="checkout-type" required>Checkout as guest</p>
+
+                                
+                                <p class="checkout-info-card-text checkout-radio-margin-bottom"><input class="checkout-radio" type="radio" name="checkout-type" required>Register</p>
+
+                                <p class="checkout-info-card-header">Register and save time!</p>
+                                <p class="checkout-info-card-additional-text">Register with us for future convenience</p>
+
+                                <p class="checkout-info-card-additional-text checkout-add-text-position checkout-add-text-fa">Fast and easy checkout</p>
+
+                                <p class="checkout-info-card-additional-text checkout-add-text-fa">Easy access to your order history and status</p>
+
+                                <button class="checkout-info-card-button">Continue</button>
+                            </form>
+
+
+                            <form>
+                                <p class="checkout-info-card-header">Already registed?</p>
+                                <p class="checkout-info-card-additional-text">Please log in below</p>
+
+                                <p class="checkout-info-card-text checkout-login-text-margin checkout-login-data">Email address</p>
+                                <input class="checkout-input" type="email" placeholder="Enter your email" required>
+                                <p class="checkout-info-card-text checkout-login-data">Password</p>
+                                <input class="checkout-input" type="password" placeholder="Password" required>
+                                <p class="required-text">Required Fields</p>
+
+                                <div class="checkout-flex-login-button">
+                                    <button class="checkout-info-card-button">Log in</button>
+                                    <a class="checkout-login-link" href="#!">Forgot password?</a>
+                                </div>
+                            </form>
+                        </div>
+
+
+
+                    </details>
+
+
+
+
+
                 </div>
             </main>
         </div>
