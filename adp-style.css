@@ -83,11 +83,11 @@ body {
 .menu-content__icon-exit i {
   transition: all 2s;
 }
+.menu-content__icon-exit i:hover {
+  transform: rotate(180deg);
+}
 .menu-content__icon-exit:hover {
   color: #F16D7F;
-}
-.menu-content__icon-exit:hover i {
-  transform: rotate(180deg);
 }
 .menu-content__header {
   display: block;
@@ -172,6 +172,10 @@ body {
 .img-block {
   display: flex;
 }
+.img-block__top-banner {
+  width: 33.3%;
+}
+
 .offer-card {
   position: relative;
   display: flex;
@@ -352,7 +356,7 @@ body {
 .footer {
   background: url(img/adp-index/footer-back-effect.png) center no-repeat, url(img/adp-index/footer-back.jpg) center no-repeat;
   background-size: cover;
-  height: 450px;
+  min-height: 450px;
 }
 .footer__flex-box {
   flex-wrap: wrap;
@@ -467,6 +471,63 @@ body {
 }
 .social__button_margin-right {
   margin-right: 7px;
+}
+
+@media screen and (max-width: 786px) {
+  .container {
+    padding: 0 16px;
+  }
+  .container .lettering-header {
+    font-size: 44px;
+    line-height: 30px;
+  }
+  .container .lettering-text {
+    font-size: 24px;
+    font-weight: 500;
+  }
+
+  .offer-card__index_margin-bot {
+    margin-bottom: 155px;
+  }
+
+  .item-card {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .item-card_margin {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .item-card:nth-of-type(even) {
+    margin-left: 5px;
+  }
+
+  .banner-bottom {
+    margin-top: 65px;
+    padding: 48px 0 64px 0;
+  }
+  .banner-bottom__flex-box {
+    flex-direction: column;
+  }
+
+  .banner-card:not(:last-of-type) {
+    margin-bottom: 48px;
+  }
+
+  .footer {
+    background-size: cover;
+  }
+  .footer__flex-box {
+    flex-direction: column;
+    padding-top: 50px;
+    padding-bottom: 140px;
+    justify-content: center;
+  }
+
+  .subscribe-form {
+    margin-top: 48px;
+  }
 }
 
 /*# sourceMappingURL=adp-style.css.map */

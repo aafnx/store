@@ -89,10 +89,11 @@ body
     & i
       transition: all 2s
 
+      &:hover
+        transform: rotate(180deg)
+
     &:hover
       color: $pink
-    &:hover i
-      transform: rotate(180deg)
 
   &__header
     display: block
@@ -172,9 +173,8 @@ body
 .img-block
   display: flex
   &__top-banner
-    //max-width: 800px
-    //max-height: 764px
-
+    //height: 100%
+    width: 33.3%
 
 .offer-card
   position: relative
@@ -350,7 +350,7 @@ body
 .footer
   background: url(img/adp-index/footer-back-effect.png) center no-repeat, url(img/adp-index/footer-back.jpg) center no-repeat
   background-size: cover
-  height: 450px
+  min-height: 450px
 
   &__flex-box
     flex-wrap: wrap
@@ -462,3 +462,50 @@ body
 
     &_margin-right
       margin-right: 7px
+
+@media screen and (max-width: 786px)
+  .container
+    padding: 0 16px
+
+    .lettering-header
+      font-size: 44px
+      line-height: 30px
+    .lettering-text
+      font-size: 24px
+      font-weight: 500
+
+  .offer-card__index_margin-bot
+    margin-bottom: 155px
+
+  .item-card
+    margin-left: 0
+    margin-right: 0
+
+    &_margin
+      margin-right: 0
+      margin-left: 0
+
+  .item-card:nth-of-type(even)
+    margin-left: 5px
+
+  .banner-bottom
+    margin-top: 65px
+    padding: 48px 0 64px 0
+
+    &__flex-box
+      flex-direction: column
+
+  .banner-card:not(:last-of-type)
+    margin-bottom: 48px
+
+  .footer
+    background-size: cover
+
+    &__flex-box
+      flex-direction: column
+      padding-top: 50px
+      padding-bottom: 140px
+      justify-content: center
+
+  .subscribe-form
+    margin-top: 48px
